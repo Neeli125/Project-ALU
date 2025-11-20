@@ -1,4 +1,4 @@
-# ALU Project
+# Arithmetic Logic Unit Project
 
 **Short description:** A parameterizable N-bit ALU supporting add, sub, AND, OR, XOR, shift operations, built in Verilog.
 
