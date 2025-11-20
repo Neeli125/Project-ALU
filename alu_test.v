@@ -14,7 +14,7 @@ initial begin
    #10 $display("%b  |  %d  -  %d  |  %d  (SUB)", sel, a, b, result);
   // Case 2: MUL
    sel = 3'b010;
-    #10 $display("%b  |  %d  <<  %d  |  %d  (LEFT SHIFT)", sel, a, b, result);
+    #10 $display("%b  |  %d  <<  1  |  %d  (LEFT SHIFT)", sel, a,result);
   // Case 3: AND
    sel = 3'b011;
    #10 $display("%b  |  %d  &  %d  |  %d  (AND)", sel, a, b, result);
@@ -29,7 +29,7 @@ initial begin
     #10 $display("%b  |  %d  ^  %d  |  %d  (XOR)", sel, a, b, result);
    // Case 7: XNOR
    sel = 3'b111;
-    #10 $display("%b  | (%d  >>  %d  )|  %d  (RIGHT SHIFT)", sel, a, b, result);
+    #10 $display("%b  | (%d  >>  1  )|  %d  (RIGHT SHIFT)", sel, b, result);
  #200;
    $finish;
   end
